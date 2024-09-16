@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Josefin+Sans:wght@600&family=Kanit:wght@500&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nanum+Gothic+Coding&family=Oswald&family=Vina+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Freeman&family=Josefin+Sans:wght@600&family=Kanit:wght@500&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nanum+Gothic+Coding&family=Oswald&family=Vina+Sans&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    display: block;
+}
+
+body{
+    background: #e0ecd4;
+    width: 100%;
+}
+
+/*--------------
+estilo Encabezado
+-------------*/
+header{
+    box-sizing: border-box;
+    background: rgb(21, 45, 97);
+    padding: 30px;
+    width: 100%;
+    height: auto;
+}
+header h1{
+    color: azure;
+    font-size: 66px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+}
+
+/*-------------
+estilo contenido
+-------------*/
+
+h1{
+    color: #242323;
+    font-size: 40px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.contenido{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.contenido h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    text-align: justify;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mision,.vision{ 
+    height: auto;
+    width: 420px;
+}
+
+.youtu{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    border-radius: 8px;
+    width: 400px;
+    height: 250px;
+}
+
+.imagenes{
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.imagenes img{
+    height: 250px;
+    width: 250px;
+    border-radius: 1000px;
+    padding: 15px;
+}
+
+/*--------------
+Estilo barra navegacion
+--------------*/
+
+.menu {
+    height: auto;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul li{
+ display: inline-block;
+}
+
+li a{
+    text-decoration: none;
+    color: #dcdce9;
+    text-align: left;
+    background-color: #4e4e51;
+    padding: 10px 16px;
+    border-radius: 10px;
+    opacity: 0.8;
+    font-size: 26px;
+    display: inline-block;
+    margin: 4px;
+    line-height: 1;
+    outline: none;
+    transition: 0.2s ease;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul li a:hover{
+    opacity: 1;
+}
+
+/*--------------
+estilo formulario
+-------------*/
+
+.formulario_basico{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-basico {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    font: bold 14px sans-serif;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+}
+
+.entrada {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.titulo{
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #4c565e;
+    font-size: 24px;
+    padding: 0 10px 15px;
+    border-bottom: 2px solid rgb(19, 19, 59);
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.form-basico .entrada label{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #5F5F5F;
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+
+.form-basico input[type=text],
+.form-basico input[type=number],
+.form-basico input[type=email], 
+.form-basico input[type=date],
+.form-basico input[type=password]{
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(5, 4, 5, 0.08);
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.form-basico input[type=number]{
+    text-decoration: none;
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(5, 4, 5, 0.08);
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+
+.form-basico select {
+    background-color: #ffffff;
+    color: #5f5f5f;
+    box-sizing: border-box;
+    max-width: 240px;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.opciones {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.opciones div {
+    margin-top: 10px;
+}
+
+.opciones label span {
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.opciones input {
+    width: auto;
+}
+
+.form-basico button {
+    display: block;
+    background-color: rgb(19, 19, 59);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    border-radius: 100px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.boton input{
+    display: block;
+    background-color: rgb(19, 19, 59);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    border-radius: 100px;
+}
+
+.campo:valid + .icon{
+    color: green;
+}
+
+.campo:invalid + .icon{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+/*--------------
+estilo pie de pagina
+-------------*/
+footer { 
+    width: 100%;
+    background: rgb(19, 19, 59);
+}
+
+footer div {
+    display: table;
+    margin: 0 auto;
+    margin-left: 30px;
+    color: #777;
+}
+
+.info {
+    display: table-cell;
+    width: 900px;
+    padding-top: 20px;
+}
+
+.titulo_footer1 {
+    color: #FFF;  
+    font-size: 20px;
+}
+.titulo_footer2 {
+    color: #FFF;  
+    font-size: 20px;
+    margin-left: auto;
+}
+.info p{
+    padding: 30px 0 30px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+footer p{
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer a {
+    color: #999;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+.redes_sociales {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.redes_sociales i{
+   font-size: 40px;
+   padding-left: 20px;
+   color: #ffffff;
+}

@@ -1,0 +1,43 @@
+CREATE TABLE `tipo_usuario` (
+  `id_tipo` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `tipo` varchar(50) NOT NULL
+)
+
+CREATE TABLE `datos_usuario` (
+  `id_usuario` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(60) NOT NULL,
+  `apellido` varchar(60) NOT NULL,
+  `tipo_doc` varchar(100) NOT NULL,
+  `documento` int(11) NOT NULL,
+  `correo` varchar(80) NOT NULL,
+  `password` varchar(130) NOT NULL,
+  `id_tipo` int(11) NOT NULL,
+   FOREIGN KEY (id_tipo) REFERENCES tipo_usuario(id_tipo)
+)
+
+
+CREATE TABLE `categorias` (
+  `id_categoria` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `categoria` varchar(50) NOT NULL
+)
+
+INSERT INTO `categorias` (`id_categoria`, `categoria`) VALUES
+(1, 'Herramientas Manuales'),
+(2, 'Herramientas de Medición'),
+(3, 'Herramientas Eléctricas y Neumáticas'),
+(4, 'Herramientas de Corte'),
+(5, 'Herramientas de Soldadura'),
+(6, 'Herramientas de Ajuste y Montaje'),
+(7, 'Herramientas de Mantenimiento y Reparación'),
+(8, 'Herramientas de Seguridad'),
+(9, 'Herramientas de Limpieza y Desengrasado');
+
+CREATE TABLE `herramientas` (
+  `id_herramienta` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `herramienta` varchar(30) NOT NULL,
+  `descripcion` varchar(100) NOT NULL,
+  `existencias` int(11) NOT NULL,
+  `imagen` longblob NOT NULL,
+  `id_categoria` int(11) NOT NULL,
+   FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
+)
